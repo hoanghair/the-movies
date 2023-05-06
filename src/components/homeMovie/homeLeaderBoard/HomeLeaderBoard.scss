@@ -1,0 +1,112 @@
+.HomeLeaderBoard {
+
+    .Wrapper {
+        padding: 30px 40px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+
+        &-note {
+
+            p {
+                .dot {
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 10px;
+                }
+
+                .all {
+                    background: linear-gradient(to right, rgba(var(--tmdbLighterGreen), 1) 0%, rgba(var(--tmdbLightGreen), 1) 100%);
+                }
+
+                .this_week {
+                    background: linear-gradient(to right, rgba(var(--tmdbLogoOrange), 1) 0%, rgba(var(--tmdbLogoRed), 1) 100%);
+                }
+
+
+            }
+        }
+
+    }
+
+    &__content {
+
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 1.5em;
+
+        &-item {
+            display: flex;
+
+            &__avatar {
+                min-width: 56px;
+                width: 56px;
+                height: 56px;
+                margin-right: 10px;
+
+                img {
+                    cursor: pointer;
+                    width: 100%;
+                    border-radius: 45px;
+                }
+
+            }
+
+            &__data {
+                width: 100%;
+
+                h3 {
+                    cursor: pointer;
+                    font-size: 1.2em;
+                    line-height: 1;
+                    &:hover{
+                        color: rgba(var(--tmdbLightGreen), 1);
+                    }
+                }
+
+                .meter {
+                    margin-top: 6px;
+                    width: 100%;
+                    height: 8px;
+                    display: flex;
+                    align-items: center;
+
+                    h4 {
+                        margin-left: 10px;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.gauge {
+    height: 100%;
+    min-width: 40px;
+    border-radius: 4px;
+
+}
+
+.all .gauge {
+    background: linear-gradient(to right, rgba(var(--tmdbLighterGreen), 1) 0%, rgba(var(--tmdbLightGreen), 1) 100%);
+}
+
+.this_week .gauge {
+    background: linear-gradient(to right, rgba(var(--tmdbLogoOrange), 1) 0%, rgba(var(--tmdbLogoRed), 1) 100%);
+}

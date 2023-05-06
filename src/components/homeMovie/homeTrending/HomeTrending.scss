@@ -1,0 +1,54 @@
+.HomeTrending,
+.HomePopular,
+.HomeLatestTrailers {
+    .Wrapper {
+        padding: 30px 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .HomeItem {
+        width: 150px;
+        min-width: 150px;
+
+        &__image {
+
+
+            img {
+                width: 100%;
+                min-height: calc(150px * 1.5);
+                height: calc(150px * 1.5);
+                background: #dbdbdb;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+                border-radius: 8px;
+            }
+        }
+
+        &__content {
+            position: relative;
+
+            &-piechart {
+                position: absolute;
+                top: -22px;
+                left: 10px;
+            }
+
+            &-name {
+                padding: 26px 10px 0px 10px;
+
+                h2 {
+                    &:hover {
+                        color: rgba(1, 180, 228, 1);
+
+                    }
+                }
+            }
+        }
+    }
+}

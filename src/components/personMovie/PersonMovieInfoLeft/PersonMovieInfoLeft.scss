@@ -1,0 +1,116 @@
+.PersonMovieInfo {
+    &__left {
+        min-width: 300px;
+        width: 300px;
+        margin-right: 30px;
+
+        &-image {
+            min-width: 300px;
+            width: 300px;
+            height: 450px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        &-profile {
+            margin-top: 30px;
+
+            &__links {
+                margin-bottom: 30px;
+
+                i {
+                    font-size: 30px;
+                    margin-right: 15px;
+                    cursor: pointer;
+                }
+            }
+
+            &__title {
+                font-weight: 600;
+                font-size: 1.3em;
+                margin-bottom: 8px;
+            }
+
+            &__detail {
+                p {
+                    margin-bottom: 20px;
+                    font-size: 1em;
+
+                    strong {
+                        display: block;
+                        font-weight: 600;
+                    }
+                    li{
+                        list-style: none;
+                        margin-top: 8px;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+        &-login {
+            .btn__login {
+                margin-top: 20px;
+
+                a {
+                    border-radius: 20px;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 24px;
+                    background-color: rgba(var(--tmdbLightBlue), 1);
+                    ;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 1em;
+                    text-transform: uppercase;
+
+                    i {
+                        margin-right: 6px;
+                    }
+
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+            }
+
+            .keyboard__shortcut {
+                margin-top: 20px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    opacity: 0.5;
+
+                    i {
+                        margin-right: 6px;
+                    }
+
+                    &:hover {
+                        color: rgba(var(--tmdbLightGreen), 1);
+                    }
+                }
+
+            }
+
+            .report__issue {
+                margin-top: 20px;
+
+                a {
+                    i {
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+}

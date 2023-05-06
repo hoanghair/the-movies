@@ -1,0 +1,65 @@
+.ContentWrapper {
+    .Wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px;
+        width: 100%;
+        min-height: 300px;
+        height: calc(100vh / 2.5);
+        max-height: 360px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+
+    &__title {
+        width: 100%;
+
+        h2 {
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 2em;
+            font-weight: 600;
+        }
+    }
+
+    &__search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 50px;
+
+        &-input {
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+        }
+
+        button {
+            display: inline-flex;
+            position: absolute;
+            padding: 12px 26px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            right: 0px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(to right, rgba(30, 213, 169, 1) 0%, rgba(1, 180, 228, 1) 100%);
+            ;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+}

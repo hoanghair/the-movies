@@ -1,0 +1,158 @@
+.PersonMovieInfo {
+    &__right {
+        width: 990px;
+
+        &-title {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: #000;
+            }
+        }
+
+        &-biography {
+            margin-bottom: 30px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 1.3em;
+                margin-bottom: 8px;
+            }
+
+            p {
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-knownFor {
+            margin-bottom: 30px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 1.3em;
+                margin-bottom: 8px;
+            }
+
+            .known__for {
+                display: flex;
+                gap: 16px;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                padding-bottom: 30px;
+
+                &-item {
+
+                    cursor: pointer;
+
+                    &__image {
+                        width: 130px;
+                        height: 195px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 8px;
+                        }
+                    }
+
+                    &__title {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+
+                        a {
+                            color: #000;
+                            font-size: 0.9em;
+                            padding-top: 4px;
+
+                            &:hover {
+                                color: rgba(var(--tmdbLightBlue), 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-acting {
+            .Acting__list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 1.3em;
+                }
+
+                &-filters {
+                    display: flex;
+
+                    &__all {
+                        margin-right: 30px;
+                    }
+
+                    &__all,
+                    &__department {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0.5rem;
+                        cursor: pointer;
+
+                        p {
+                            margin-right: 8px;
+                        }
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+
+            }
+
+            .Acting__table {
+                box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+                border: 1px solid rgba(var(--lightGrey), 1);
+                background-color: #fff;
+                margin-top: 10px;
+
+                &-item {
+                    width: 100%;
+                    margin: 0;
+                    border-collapse: separate;
+                    border-bottom: 1px solid #dedede;
+                    padding: 10px 0 10px 0;
+
+                    &__row {
+                        display: flex;
+                        align-items: center;
+
+                        .year,
+                        .name {
+                            padding: 8px 16px;
+                        }
+
+                        .name {
+                            font-weight: 600;
+
+                            &:hover {
+                                color: rgba(var(--tmdbLightBlue), 1);
+                            }
+                        }
+
+                        i {
+                            font-size: 10px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
